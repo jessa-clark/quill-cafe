@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Quill Café
 
-## Available Scripts
+Grab a beverage and connect through poetry <3
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+Quill Café is built with React.js and Airtable which allows the user to choose a mood icon on the homepage. Upon choosing a mood, the user is directed to a collection of poetry that corresponds with that mood. The collection will be a combination of famous poetry, as well as user input poetry. Additionally, on the homepage, the user can choose to either add their own poetry or add their favorite poetry from other poets. Each option will lead to a form where the user can input the poem, name of poet, genre(mood) and an image url. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
+![Quill Cafe (2)](https://user-images.githubusercontent.com/84357702/123556307-754ce680-d758-11eb-87f0-54c7baa69f73.jpg)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Component Hierarchy
+![Quill Cafe Hierarchy](https://user-images.githubusercontent.com/84357702/123530210-ed1e0100-d6c5-11eb-9a30-0f933b78f64d.jpg)
 
-### `npm test`
+## API and Data Sample
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+"https://api.airtable.com/v0/apprFbDJnZkyhLIR1/mood?maxRecords=3&view=Grid%20view" \
+  -H "Authorization: Bearer YOUR_API_KEY"
+EXAMPLE RESPONSE
+{
+    "records": [
+        {
+            "id": "recYaYBDi5ojfdlvl",
+            "fields": {
+                "mood": "melancholy",
+                "poem": "Chewie hasn’t touched his food I hope he’ll be o.k.. It hasn’t been the same for him Since Leia passed away.  He’s a melancholy Wookie as anyone can s...",
+                "author": "John F McCullagh",
+                "title": "Melancholy Wookie"
+            },
+            "createdTime": "2021-06-26T13:29:05.000Z"
+        },
+        {
+            "id": "reclUlfP7lH5ohmbu",
+            "fields": {
+                "poem": "Real depression is when you stop loving the things you love.",
+                "title": "Real Depression",
+                "author": "Atticus",
+                "mood": "melancholy"
+            },
+            "createdTime": "2021-06-26T13:29:05.000Z"
+        },
+        {
+            "id": "recdm4q0sz2X9etVa",
+            "fields": {
+                "poem": "So, we’ll go no more a roving So late into the night, Though the heart be still as loving, And the moon be still as bright.  For the sword outwears it...",
+                "title": "So We'll Go No More a Roving",
+                "author": "Lord Byron",
+                "mood": "melancholy"
+            },
+            "createdTime": "2021-06-26T13:29:05.000Z"
+        }
+    ],
+    "offset": "recdm4q0sz2X9etVa"
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### MVP/PostMVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP 
 
-### `npm run eject`
+- Home page with clickable icons that route to each path
+- Get and post poems, poets and genre from Airtable
+- Display all poems page
+- Use forms to create poems and assign them to appropriate genre
+- Navbar
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### PostMVP  
+- Hero's Image on homepage
+- Drop down search bar on display all page that finds poems via genre
+- add links to forms in navbar
+- create footer
+- add a "read more" button on poetry renders
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Schedule
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+|  Day | Deliverable | Status
+|---|---| ---|
+|June 25| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|June 29| Project Approval/Core Application Structure/Airtable Setup | Incomplete
+|June 30| Psudocode / actual Code / Components / Get, Set, Put Data | Incomplete
+|July 01| June 30 cont'd / CSS Components| Incomplete
+|July 02| CSS Component cont'd / MVP  | Incomplete
+|July 02| MVP | Incomplete
+|July 06| Advanced CSS / final touches | Incomplete
+|July 07| Presentations | Incomplete
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Timeframes
 
-## Learn More
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Proposal | H | 2hrs| hrs | hrs |
+| Airtable setup | H | 2hrs| hrs | hrs |
+| Clickable icons | H | 2hrs| hrs | hrs |
+| Navbar | H | 1hrs| hrs | hrs |
+| Data population pg1 | H | 2hrs| hrs | hrs |
+| Data population pg2 | H | 2hrs| hrs | hrs |
+| Data population pg3 | H | 2hrs| hrs | hrs |
+| Data population pg4 | H | 2hrs| hrs | hrs |
+| Data population pg5 | H | 2hrs| hrs | hrs |
+| Data population pg6 | H | 2hrs| hrs | hrs |
+| Data population pg7 | H | 2hrs| hrs | hrs |
+| Data population pg8 | H | 2hrs| hrs | hrs |
+| Data population pg9| H | 2hrs| hrs | hrs |
+| Form creation pg1 | H | 2hrs| hrs | hrs |
+| Form creation pg2 | H | 2hrs| hrs | hrs |
+| Component CSS pg1 | H | 2hrs| hrs | hrs |
+| Component CSS pg2 | H | 2hrs| hrs | hrs |
+| Component CSS pg3 | H | 2hrs| hrs | hrs |
+| Component CSS pg4 | H | 2hrs| hrs | hrs |
+| Component CSS pg5 | H | 2hrs| hrs | hrs |
+| Component CSS pg6 | H | 2hrs| hrs | hrs |
+| Component CSS pg7 | H | 2hrs| hrs | hrs |
+| Component CSS pg8 | H | 2hrs| hrs | hrs |
+| Component CSS pg9 | H | 2hrs| hrs | hrs |
+| Responsive CSS  | H | 3hrs| hrs | hrs |
+| Advanced CSS | H | 2hrs| hrs | hrs |
+| Final Touches / Deploy | H | 2hrs| hrs | hrs |
+| Total | H | 54hrs| hrs | hrs |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## SWOT Analysis
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Strengths:
+I am going into project 2 with a much better design plan and method. I know exactly what I want my app to look like and what I want it to execute. I feel more organized and focused. I know what homework/labs/code snippets to reference if I need. I have resources for the things I want to execute that we did not learn.
 
-### Code Splitting
+### Weaknesses:
+I am not too keen on using class components. I feel like I can, but it will take extra time because it's not something I've completely absorbed yet. I am also nervous about using CSS Components but know I need to in order to execute some of the design I want to implement. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Opportunities:
+This project is a wonderful way for me to showcase what I've learned over the last two weeks with General Assembly's Software Engineering Intensive. I am very curious about React and what I can do with it. I am enjoying front-end designing and I love what we've done so far with React. 
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Threats:
+I tend to get sidetracked by styling. Last project I spent more time on CSS and designing than anything else. I have a hard time sticking with one decision and change my mind often until it feels right. This can result in countless hours of research and looking at images/fonts/gradient colors/etc. I also didn't keep track of time last project and want to do better this time. 
