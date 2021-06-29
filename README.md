@@ -95,10 +95,10 @@ EXAMPLE RESPONSE
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Proposal | H | 2hrs| hrs | hrs |
-| Airtable setup | H | 2hrs| hrs | hrs |
+| Proposal | H | 2hrs| 2hrs | 2hrs |
+| Airtable setup | H | 2hrs| 2hrs | 2hrs |
 | Clickable icons | H | 2hrs| hrs | hrs |
-| Navbar | H | 1hrs| hrs | hrs |
+| Navbar | H | 1hrs| 1hrs | 1hrs |
 | Data population pg1 | H | 2hrs| hrs | hrs |
 | Data population pg2 | H | 2hrs| hrs | hrs |
 | Data population pg3 | H | 2hrs| hrs | hrs |

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Bentham&display=swap');
+
+a {
+text-decoration: none;
+text-align: center;
+color: black;
+}
+
+
+a:active {
+  color: darkturquoise;
+}
+
+#quote {
+  grid-area: C;
+  margin-left: 15px;
+  font-family: 'Bentham', serif;
+  font-size: 20px;
+  align-items: center;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  height: 80px;
+  border-bottom: solid black;
+  margin: 0;
+  padding-top: 0;
+  align-items: center;
+  grid-template-areas: 
+  "A B C";
+}
+
+
+#name {
+  grid-area: A;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-family: 'Benne', serif;
+  font-size: 42px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+#quill {
+  grid-area: A;
+  height: 50px;
+  margin-bottom: 5px;
+  margin-left: 195px;
+}
