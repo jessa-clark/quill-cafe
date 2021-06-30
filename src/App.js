@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { Route, Link } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Mood from './components/Mood';
+import Addyou from './components/Addyou'
+import Home from "./components/Home";
 import { baseURL, config } from './services';
 import axios from "axios";
 import './App.css';
 
 function App() {
   const [poems, setPoems] = useState([])
-  const [filteredMood, setFilteredMood] =useState(null)
+  // const [toggleFetch, setToggleFetch] =useState(true)
   
     useEffect(() => {
       const fetchData = async () => {
@@ -20,35 +21,21 @@ function App() {
       fetchData();
     }, []);
     
-    const melancholy = poems.filter(poem => poem.fields.mood === "melancholy")
-    function showMelancholy(){
-      setFilteredMood(melancholy)
-    }
+
+    
   
     return (
       <div className="App">
         <Navbar />
         <Route exact path="/">
-  
-        <main>
-          {filteredMood && filteredMood.map((poem) => (
-            <div key={poem.id}>
-              <Mood poem={poem}/>
-            </div>
-          ))}
-        <button onClick={() => showMelancholy()}>Melancholy</button>
-        <button>Romantic</button>
-        <button>Sassy</button>
-        <button>Whimsical</button>
-        <button>Reflective</button>
-        <button>Inspired</button>
-        <button>Humorous</button>
-        <button>Idyllic</button>
-        </main>
+        <Home poems={poems} />
+
         </Route>
-        <Route path="/mood/:id">
-          
+        <Route path="/mood/:mood">
+        <Home poems={poems} />
         </Route>
+        <Route path="/newyou"></Route>
+
       </div>
     );
   }

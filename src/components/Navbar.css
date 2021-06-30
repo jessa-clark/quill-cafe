@@ -12,16 +12,17 @@ a:active {
 }
 
 #quote {
+  margin-left: 10rem;
   grid-area: C;
-  margin-left: 15px;
   font-family: 'Bentham', serif;
   font-size: 20px;
   align-items: center;
+
 }
 
 .nav {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 2fr 1fr 2fr;
   height: 80px;
   border-bottom: solid black;
   margin: 0;
@@ -47,6 +48,6 @@ a:active {
 #quill {
   grid-area: A;
   height: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   margin-left: 195px;
 }
