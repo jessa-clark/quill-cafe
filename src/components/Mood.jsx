@@ -1,21 +1,16 @@
-// import { useParams } from "react-router-dom";
-
-// import { useEffect } from "react";
+import { Link } from "react-router-dom"
 
 function Mood (props) {
 
-  // useEffect(() => {
-  //   const moods = props.data.reduce((categories, current) => {
-  //     if (!categories.includes(current.mood)) {
-  //     categories.push(current.mood)
-  //     console.log(categories)
-  //     }
-  //     return categories
-  //     }, [])
-  // })
+console.log(props)
 
   return (
-    <h4>Hello</h4>
+   
+    <div>
+      <Link to={`/mood/${props.poem.id}`}>
+      <h3>{props.poem.fields.title}</h3>
+      </Link>
+    </div>
   )
 }
 
