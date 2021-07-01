@@ -1,8 +1,10 @@
 import { useParams, Link } from "react-router-dom";
 import Mood from "./Mood";
+import { Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import './Home.css'
 
-const Home = (props) => {
+const Home = (props) => { 
   const params = useParams();
   console.log(props.poems, params);
   const filteredMood = props.poems.filter(
@@ -18,19 +20,25 @@ const Home = (props) => {
   }, []);
 
   return (
-    <main>
-      {filteredMood.map((poem) => (
-        <div key={poem.id}>
-          <Mood poem={poem} />
-        </div>
-      ))}
+    <div className="infoContainer">
       <div className="buttonContainer">
       {moods.map((mood) => (
         <Link to={`/mood/${mood}`}>
-          <button id={mood}>{mood}</button></Link>
+          <Button variant="primary"className="custom-btn"
+          align="center" 
+          type="submit" 
+          id={mood}
+          >{mood}</Button>
+          </Link>
       ))}
       </div>
-    </main>
+      {filteredMood.map((poem) => (
+        <div className="info"
+        key={poem.id}>
+          <Mood poem={poem} />
+        </div>
+      ))}
+    </div>
   );
 };
 

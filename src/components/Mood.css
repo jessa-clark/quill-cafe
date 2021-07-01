@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Bentham&display=swap');
+
+.author {
+  color: black;
+  font-family: 'Benne', serif;
+  
+}
+
+.title{
+  color:black;
+  font-family: 'Benne', serif;
+  font-size: 80px;
+}
+
+.poem {
+  color: black;
+  font-family: 'Bentham', serif;
+}
+

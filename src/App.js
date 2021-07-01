@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Addyou from './components/Addyou'
 import Home from "./components/Home";
 import { baseURL, config } from './services';
 import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 
 function App() {
