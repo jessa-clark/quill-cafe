@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Benne&family=Bentham&display=swap');
 
+body, html {
+  height: 100%;
+}
+
+.infoContainer {
+  position: relative;
+  background-color: #DEB9B1;
+  background-image: url(/Users/jessicaclark/general_assembly/sei/Flamingos/unit_2/quill-cafe/src/assets/AdobeStock_124817786.jpeg);
+}
+
 .buttonContainer {
-  margin-top: 1em;
-  margin-bottom: 2em;
+  padding-top: 1vh;
+  padding-bottom: 5vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
   row-gap: 2em;
-  column-gap: 12vw;
+  column-gap: 6vw;
   justify-content: center;
+  
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  border-bottom: 2px solid black;
   
 }
 
@@ -18,10 +34,10 @@
   font-family: 'Benne', serif;
   text-decoration: none;
   display:block;
-  width:200px;
-  height:200px;
+  width: 15vw;
+  height:140px;
   line-height:80px;
-  border: 2px solid #f5f5f5;
+  border: .2em double #f5f5f5;
   border-radius: 50%;
   color:#f5f5f5;
   text-align:center;
@@ -35,49 +51,87 @@
 
 .custom-btn:hover {
 color: black;
-background: #f6b93b;
-border-color: #050401;
+border-color: white;
 transition: all 0.4s ease 0s;
 }
 
 .info {
   text-align: center;
+  
+  
+
+
 }
 
 #humorous {
   background: #CAD2C6;
 }
 #humorous:hover{
-  background: #C5A8A0;
+  background:#8C9189;
+  color: white;
 }
 
 #romantic {
   background: #C5A8A0;
 }
 
+#romantic:hover {
+  background: #85716B;
+  color: white;
+}
+
 #melancholy {
   background: #A0BDC5;
   color: white;
+}
+#melancholy:hover {
+  background: #6B7F85;
+  color: white;
+
 }
 
 #inspired {
   background: #C1C391;
 }
 
+#inspired:hover {
+  background: #818260;
+  color: white;
+}
+
 #whimsical {
   background: #7D7479;
+}
+#whimsical:hover {
+  background: #3D393B;
+  color: white;
 }
 
 #idyllic {
   background: #BD9BBF;
 }
 
+#idyllic:hover {
+  background:#7E6780;
+  color: white;
+}
+
 #sassy {
   background: #C391A8;
 }
 
+#sassy:hover {
+  background: #826070;
+  color: white;
+}
+
 #reflective {
   background: #ABC5A0;
+}
+
+#reflective:hover {
+  background: #73856B;
+  color: white;
 }
 
 

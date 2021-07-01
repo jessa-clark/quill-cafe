@@ -1,19 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Benne&family=Bentham&display=swap');
 
+.question {
+  text-align: center;
+  font-family: 'Bentham', serif;
+  font-weight: 300;
+  font-size: 5vw;
+  color: white;
+  padding: 0;
+  
+}
+.poem-container {
+  justify-content: center;
+  max-height: 100%;
+  margin-top: 2px;
+  border: 3px;
+  border-style: double;
+  border-color: white;
+  padding: 1em;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  background-color: #DEC385;
+
+  
+
+}
 .author {
   color: black;
   font-family: 'Benne', serif;
+  line-height: normal;
   
 }
 
 .title{
   color:black;
   font-family: 'Benne', serif;
-  font-size: 80px;
+  font-size: 40px;
+  line-height: normal;
 }
 
 .poem {
   color: black;
   font-family: 'Bentham', serif;
+  font-size: 20px;
+  line-height: normal;
+  
 }
 

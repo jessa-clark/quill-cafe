@@ -1,7 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import './Mood.css'
-
-function Mood (props) {
+function Poems (props) {
 
 
 
@@ -20,4 +17,4 @@ function Mood (props) {
   )
 }
 
-export default Mood;
+export default Poems;

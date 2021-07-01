@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
-import { useHistory, useParams } from "react-router";
+import { useParams } from "react-router";
 import { baseURL, config } from "../services";
+import './Addyou.css'
 
 function Addyou(props) {
   const [title, setTitle] = useState("");
@@ -9,7 +10,9 @@ function Addyou(props) {
   const [location, setLocation] = useState("");
   const [poem, setPoem] = useState("");
   const params = useParams();
-  const history = useHistory();
+  
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,19 +22,19 @@ function Addyou(props) {
       location,
       poem,
     };
-    if (params.id) {
-      const url = `${baseURL}/${params.id}`;
-      await axios.put(url, { fields: newYou }, config);
-    }
-    await axios.post(baseURL, { fields: newYou }, config);
+    
+      const url = `${baseURL}/newyou/${params.id}`;
+      
+    await axios.post(url, { fields: newYou }, config);
     props.setToggleFetch((curr) => !curr);
-
-    setTimeout(() => {
-      history.push("/");
-    });
+  }
 
     return (
-      <form onSubmit={handleSubmit}>
+      <div className="addyou">
+      <p className="greeting">Be you. Express yourself.</p>
+      <p className="form-description">Submit your own poetry. Choose to remain anonymous or share your
+      name and location. Choose the mood of your poem to share with others.</p>
+      <form className="form"onSubmit={handleSubmit}>
         <label htmlFor="title">Title</label>
         <input
           id="title"
@@ -69,8 +72,9 @@ function Addyou(props) {
         />
         <button type="submit">Mood</button>
       </form>
+      </div>
     );
   };
-}
+
 
 export default Addyou;

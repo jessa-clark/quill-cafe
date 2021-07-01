@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota&family=Benne&family=Bentham&display=swap');
+
+.addyou {
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.greeting {
+  font-family: 'Benne', serif;
+  font-size: 5em;
+  margin-top: .5em;
+  padding: 0;
+  margin-bottom: 0;
+  
+}
+
+.form-description{
+  font-family: 'Benne', serif;
+  font-size: 1.6em;
+  margin-right: 20em;
+  margin-left: 20em;
+  text-overflow: inherit;
+  margin-top: 0;
+  margin-bottom: .9em;
+}
+
+.form {
+  display:flex;
+  flex-direction: column;
+  font-family: 'Benne', serif;
+}

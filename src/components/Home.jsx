@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, NavLink, } from "react-router-dom";
 import Mood from "./Mood";
 import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,7 +10,6 @@ const Home = (props) => {
   const filteredMood = props.poems.filter(
     (poem) => poem.fields.mood === params.mood
   );
-
   
   const moods = props.poems.reduce((categories, current) => {
     if (!categories.includes(current.fields.mood)) {
@@ -21,15 +20,19 @@ const Home = (props) => {
 
   return (
     <div className="infoContainer">
+      <p className="question">What's your mood?</p>
       <div className="buttonContainer">
       {moods.map((mood) => (
-        <Link to={`/mood/${mood}`}>
-          <Button variant="primary"className="custom-btn"
+        <NavLink to={`/mood/${mood}`}>
+          <Button
+          variant="primary"
+          className="custom-btn"
           align="center" 
           type="submit" 
           id={mood}
+          value={mood}
           >{mood}</Button>
-          </Link>
+          </NavLink>
       ))}
       </div>
       {filteredMood.map((poem) => (
@@ -37,6 +40,7 @@ const Home = (props) => {
         key={poem.id}>
           <Mood poem={poem} />
         </div>
+  
       ))}
     </div>
   );

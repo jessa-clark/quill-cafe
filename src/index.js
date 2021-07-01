@@ -5,14 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
-import Card from './components/Cards';
+
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
     <App />
-    <Card />
     </Router>
     
   </React.StrictMode>,

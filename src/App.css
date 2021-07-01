@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota&family=Benne&family=Bentham&display=swap');
+
 body {
-  background-image: url(https://i.imgur.com/c111oqA.jpg);
-  background-size: cover;
-  width: 100%
+  background-color: #DEC385;
+}
+
+
+.welcome {
+  text-align: center;
+  font-family: 'Benne', serif;
+  background: white;
+  margin-top: 1em;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 8vh;
+  padding-top: 8vh;
+  padding-bottom: 2vh;
+  font-size: 25px;
+  border: 3px groove black;
 }
 /* @media screen and (min-device-width : 320px) {
   .container {
