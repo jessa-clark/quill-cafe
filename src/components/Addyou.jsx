@@ -71,8 +71,9 @@ function Addyou(props) {
           autoComplete="off"
           required
         />
-        <label className="dropdown">Select Mood</label>
+        <label className="label">Select Mood</label>
         <select 
+        className="dropdown"
         name="mood"
         value={mood}
         onChange={(e) => setMood(e.target.value)}

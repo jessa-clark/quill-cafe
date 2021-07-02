@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { baseURL, config } from "../services";
-import './Addyou.css'
+import './Addfav.css'
 
 function Addfav(props) {
   const [title, setTitle] = useState("");
@@ -27,7 +27,7 @@ function Addfav(props) {
   }
 
     return (
-      <div className="addyou">
+      <div className="addfav">
       <p className="greeting">Share your favorite.</p>
       <p className="form-description">Submit your favorite poem from your favorite poet. Add a classic. Introduce the world to someone new. Share the love.</p>
       <form className="form"onSubmit={handleSubmit}>
@@ -59,10 +59,9 @@ function Addfav(props) {
           autoComplete="off"
           required
         />
-        <div className="dropdown2">
-        <label>Select Mood</label>
+        <label className="label">Select Mood</label>
         <select 
-        className="drop"
+        className="dropdown"
         value={mood}
         onChange={(e) => setMood(e.target.value)}
         >
@@ -76,7 +75,6 @@ function Addfav(props) {
           <option value="sassy">sassy</option>
           <option value="melancholy">melancholy</option>
         </select>
-        </div>
         <button id="share" type="submit">Share</button>
       </form>
       </div>

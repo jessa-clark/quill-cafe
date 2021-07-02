@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota&family=Benne&family=Bentham&display=swap');
 
-
 label {
-  font-size: 1.8em;
+  font-size: 30px;
 }
+
 .addyou {
   text-align: center;
   margin-left: 25em;
@@ -86,6 +86,7 @@ label {
   font-size: 30px;
   margin-left: 8em;
   margin-right: 8em;
+  margin-bottom:1em;
   height: 20em;
   text-overflow: inherit;
   word-wrap: break-word;
@@ -93,6 +94,21 @@ label {
   background: #BD9BBF;
   border: 2px solid white;
   color: #3F3340;
+}
+
+.label {
+
+}
+
+.dropdown {
+  max-width: 20em;
+  margin-left: 8em;
+  margin-right: 8em;
+  font-size: 30px;
+  text-align: center;
+  background-color: #BD9BBF;
+  border: 2px solid white;
+  color: white;
 }
 
 #share{

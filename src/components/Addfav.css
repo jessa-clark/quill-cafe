@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota&family=Benne&family=Bentham&display=swap');
 
-
 label {
-  font-size: 1.8em;
+  font-size: 30px;
 }
-.addyou {
+
+.addfav {
   text-align: center;
   margin-left: 25em;
   margin-right: 25em;
   margin-top: 2em;
   border: 2px groove black;
-  background: #8A708C;
+  background: #A87D91;
   color: white;
   border: 3px solid white;
 }
@@ -50,7 +50,7 @@ label {
   margin-left: 8em;
   margin-right: 8em;
   margin-bottom: 1em;
-  background: #BD9BBF;
+  background: #CF99B2;
   border: 2px solid white;
   color: #3F3340;
 }
@@ -62,7 +62,7 @@ label {
   margin-left: 8em;
   margin-right: 8em;
   margin-bottom: 1em;
-  background: #BD9BBF;
+  background: #CF99B2;
   text-align: center;
   border: 2px solid white;
   color: #3F3340;
@@ -76,7 +76,7 @@ label {
   margin-right: 8em;
   margin-bottom: 1em;
   text-align: center;
-  background: #BD9BBF;
+  background: #CF99B2;
   border: 2px solid white;
   color: #3F3340;
 }
@@ -86,22 +86,29 @@ label {
   font-size: 30px;
   margin-left: 8em;
   margin-right: 8em;
+  margin-bottom:1em;
   height: 20em;
   text-overflow: inherit;
   word-wrap: break-word;
   word-break: break-all;
-  background: #BD9BBF;
+  background: #CF99B2;
   border: 2px solid white;
   color: #3F3340;
 }
 
-.drop {
-  width: 10em;
+.label {
+
 }
-.dropdown2 {
-  font-family: 'Bentham', serif;
+
+.dropdown {
+  max-width: 20em;
+  margin-left: 8em;
+  margin-right: 8em;
   font-size: 30px;
-  height: 20em;
+  text-align: center;
+  background-color: #CF99B2;
+  border: 2px solid white;
+  color: white;
 }
 
 #share{
@@ -119,7 +126,7 @@ label {
   color:#f5f5f5;
   text-align:center;
   text-decoration:none;
-  background: #645266;
+  background: #826070;
   box-shadow: 0 0 3px gray;
   font-size:40px;
   font-weight:bold;
