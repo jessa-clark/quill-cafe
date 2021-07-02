@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useState } from "react";
-import { useParams } from "react-router";
 import { baseURL, config } from "../services";
 import './Addyou.css'
 
@@ -9,7 +8,8 @@ function Addyou(props) {
   const [author, setAuthor] = useState("");
   const [location, setLocation] = useState("");
   const [poem, setPoem] = useState("");
-  const params = useParams();
+  const [mood, setMood] = useState("");
+
   
 
 
@@ -21,12 +21,13 @@ function Addyou(props) {
       author,
       location,
       poem,
+      mood,
     };
     
-      const url = `${baseURL}/newyou/${params.id}`;
+    // const url = `${baseURL}/newyou/${params.id}`;
       
-    await axios.post(url, { fields: newYou }, config);
-    props.setToggleFetch((curr) => !curr);
+    await axios.post(baseURL, { fields: newYou }, config);
+    // props.setToggleFetch((curr) => !curr);
   }
 
     return (
@@ -62,7 +63,7 @@ function Addyou(props) {
           required
         />
         <label htmlFor="poem">Poem</label>
-        <input
+        <textarea
           id="poem"
           type="text"
           onChange={(e) => setPoem(e.target.value)}
@@ -70,7 +71,23 @@ function Addyou(props) {
           autoComplete="off"
           required
         />
-        <button type="submit">Mood</button>
+        <label className="dropdown">Select Mood</label>
+        <select 
+        name="mood"
+        value={mood}
+        onChange={(e) => setMood(e.target.value)}
+        >
+          <option value="dropdown">Select Mood</option>
+          <option value="humorous">humorous</option>
+          <option value="whimsical">whimsical</option>
+          <option value="inspired">inspired</option>
+          <option value="reflective">reflective</option>
+          <option value="idyllic">idyllic</option>
+          <option value="romantic">romantic</option>
+          <option value="sassy">sassy</option>
+          <option value="melancholy">melancholy</option>
+        </select>
+        <button id="share" type="submit">Share</button>
       </form>
       </div>
     );

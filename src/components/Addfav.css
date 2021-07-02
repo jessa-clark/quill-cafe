@@ -95,6 +95,15 @@ label {
   color: #3F3340;
 }
 
+.drop {
+  width: 10em;
+}
+.dropdown2 {
+  font-family: 'Bentham', serif;
+  font-size: 30px;
+  height: 20em;
+}
+
 #share{
   margin-top: 1em;
   margin-left: 8em;
