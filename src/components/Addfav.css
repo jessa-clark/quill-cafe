@@ -50,9 +50,9 @@ label {
   margin-left: 8em;
   margin-right: 8em;
   margin-bottom: 1em;
-  background: #CF99B2;
-  border: 2px solid white;
-  color: #3F3340;
+  background: white;
+  border: 2px solid black;
+  color: black;
 }
 
 #author {
@@ -62,10 +62,10 @@ label {
   margin-left: 8em;
   margin-right: 8em;
   margin-bottom: 1em;
-  background: #CF99B2;
+  background: white;
   text-align: center;
-  border: 2px solid white;
-  color: #3F3340;
+  border: 2px solid black;
+  color: black;
 }
 
 #location {
@@ -76,8 +76,8 @@ label {
   margin-right: 8em;
   margin-bottom: 1em;
   text-align: center;
-  background: #CF99B2;
-  border: 2px solid white;
+  background: white;
+  border: 2px solid black;
   color: #3F3340;
 }
 
@@ -91,9 +91,9 @@ label {
   text-overflow: inherit;
   word-wrap: break-word;
   word-break: break-all;
-  background: #CF99B2;
-  border: 2px solid white;
-  color: #3F3340;
+  background: white;
+  border: 2px solid black;
+  color: black;
 }
 
 .label {
@@ -106,9 +106,9 @@ label {
   margin-right: 8em;
   font-size: 30px;
   text-align: center;
-  background-color: #CF99B2;
-  border: 2px solid white;
-  color: white;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
 }
 
 #share{

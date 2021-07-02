@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Addyou from "./components/Addyou";
 import Addfav from "./components/Addfav"
 import Card from './components/Cards';
+import Displayall from './components/Displayall'
 import { baseURL, config } from './services';
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -53,8 +54,8 @@ function App() {
         </Route>
         <Route path="/newfav/:id">
         </Route>
-        <Route path="/poems/">
-
+        <Route path="/displayall/">
+          <Displayall poems={poems}/>
         </Route>
       </div>
     );

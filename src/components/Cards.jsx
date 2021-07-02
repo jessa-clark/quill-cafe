@@ -24,13 +24,14 @@ class Cards extends Component {
             </Link> 
           </div>
           <div className="col-md-4">
+            <Link to="/displayall">
             <Card 
             imgsrc={img2} 
             title="Browse all"
             alt="people"
             text="Browse all the moods and view all poems"
             />
-            
+            </Link>
           </div>
           <div className="col-md-4">
             <Link to="/newfav">
