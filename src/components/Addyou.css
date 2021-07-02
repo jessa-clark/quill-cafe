@@ -96,9 +96,6 @@ label {
   color: #3F3340;
 }
 
-.label {
-
-}
 
 .dropdown {
   max-width: 20em;
@@ -131,4 +128,52 @@ label {
   font-size:40px;
   font-weight:bold;
 }
+
+@media screen and (max-width: 1025px) {
+  .container {
+    width: 1200;
+  }
+
+  .addyou {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+  }
+
+  #title {
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #poem {
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #author {
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #location {
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  .dropdown {
+    font-size: 20px;
+    margin-left: 7.3em;
+    margin-right: 7em;
+  }
+
+  #share {
+    margin-left: 5.5em;
+    width: 20vw;
+    height:120px;
+  }
+} 
 

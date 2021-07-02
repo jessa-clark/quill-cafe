@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota&family=Benne&family=Bentham&display=swap');
 
-body {
 
-}
 a:link {
 text-decoration: none;
 text-align: center;
@@ -58,4 +56,23 @@ a:active {
   
   margin-left: 5vw;
   
+}
+
+@media screen and (max-width: 1025px) {
+  .nav {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+
+  #name {
+    margin: 0;
+    line-height: 1.5em;
+    padding: 0;
+  }
+
+  #quote {
+  margin-left: 21vw;
+  margin-top: 0;
+  }
 }

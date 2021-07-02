@@ -18,6 +18,7 @@ body {
   font-size: 25px;
   border: 3px groove black;
 }
+
 /* @media screen and (min-device-width : 320px) {
   .container {
     
@@ -88,12 +89,4 @@ body {
   #quote {
     margin-left: 40vw;
   }
-}
-@media screen and (min-width: 1900px) {
-  .container {
-    width: 1870px;
-  }
-  #quote {
-    margin-left: 60vw;
-  }
-} */
+/* } */
