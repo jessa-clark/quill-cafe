@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
 import './Addfav.css'
 
@@ -8,6 +9,7 @@ function Addfav(props) {
   const [author, setAuthor] = useState("");
   const [poem, setPoem] = useState("");
   const [mood, setMood] = useState("");
+  const history = useHistory();
 
   
 
@@ -19,11 +21,12 @@ function Addfav(props) {
       poem,
       mood,
     };
-    
-    
-      
     await axios.post(baseURL, { fields: newYou }, config);
-  
+    props.setToggleFetch((curr) => !curr);
+    
+    setTimeout(() => {
+      history.push(`/mood/${mood}`);
+    }, );
   }
 
     return (

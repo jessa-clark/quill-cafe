@@ -6,6 +6,7 @@ body, html {
 
 .infoContainer {
   position: relative;
+  margin-bottom: 10vh;
   background-color: #DEB9B1;
   background-image: url(https://i.imgur.com/F4p0TdK.jpg);
 }
@@ -19,13 +20,12 @@ body, html {
   row-gap: 2em;
   column-gap: 6vw;
   justify-content: center;
-  
   height: 100%;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   
 }
 
@@ -64,7 +64,7 @@ transition: all 0.4s ease 0s;
   margin-right: 25em;
   text-align: center;
   border: 3px solid black;
-  background-color: #DEC385;
+  background-color: #ABC5A0;
 }
 
 #humorous {
@@ -142,6 +142,10 @@ transition: all 0.4s ease 0s;
   .custom-btn {
     width: 20vw;
     height: 120px;
+  }
+  .info {
+    width: 80vw;
+    margin-left: 10vw;
   }
 }
 

@@ -8,6 +8,7 @@ function Displayall(props) {
         <div className="info" key={poem.id}>
           <Mood poem={poem} />
         </div>
+        
       ))}
     </div>
   );

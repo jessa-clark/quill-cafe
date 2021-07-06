@@ -18,7 +18,7 @@ class Cards extends Component {
             imgsrc={img3} 
             alt="lightbulb"
             title="Add your own"
-            text="Add your own poetry creation and assign it a mood"
+            text="Add your own creation and assign it a mood"
             button="Add you"
             />
             </Link> 
@@ -29,7 +29,7 @@ class Cards extends Component {
             imgsrc={img2} 
             title="Browse all"
             alt="people"
-            text="Browse all the moods and view all poems"
+            text="Browse all the moods and view all poems."
             />
             </Link>
           </div>
@@ -39,7 +39,7 @@ class Cards extends Component {
             imgsrc={img1} 
             title="Add your favorite"
             alt="quote box"
-            text="Add your favorite poem and assign it a mood"
+            text="Add your favorite poem and assign it a mood."
             />
             </Link>
           </div>

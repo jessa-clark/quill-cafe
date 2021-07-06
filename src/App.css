@@ -19,6 +19,20 @@ body {
   border: 3px groove black;
 }
 
+@media screen and (max-width: 1025px) {
+  .welcome {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 5vw;
+    padding-top: 3vh;
+    font-size: 35px;
+  }
+  .title {
+    font-size: 57px;
+    margin-top: 0px;
+  }
+}
+
 /* @media screen and (min-device-width : 320px) {
   .container {
     

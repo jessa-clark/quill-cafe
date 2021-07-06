@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
   const [poems, setPoems] = useState([])
-  // const [toggleFetch, setToggleFetch] =useState(true)
+  const [toggleFetch, setToggleFetch] =useState(true)
   
     useEffect(() => {
       const fetchData = async () => {
@@ -23,7 +23,7 @@ function App() {
         // console.log("poems", poems)
       }
       fetchData();
-    }, []);
+    }, [toggleFetch]);
     
 
     
@@ -32,30 +32,30 @@ function App() {
       <div className="App">
         <Navbar />
         <Route exact path="/">
-        <Home poems={poems} />
+        <Home poems={poems} setToggleFetch={setToggleFetch}/>
         <div className="welcome">
         <p className="title">Welcome to the Quill Café where you can browse famous and unknown poets based on your mood.</p>
         <p>Add your favorite poem, browse the genres or add your own poetry creations.
         </p>
         <p>Let's connect, inspire and relish in the deliciousness of poetry.</p>
         </div>
-        <Card />
+        <Card setToggleFetch={setToggleFetch}/>
         </Route>
         <Route path="/mood/:mood">
-        <Home poems={poems} />
+        <Home poems={poems} setToggleFetch={setToggleFetch}/>
         </Route>
         <Route path="/newyou/">
-          <Addyou poems={poems}/>
+          <Addyou poems={poems} setToggleFetch={setToggleFetch}/>
         </Route>
         <Route path="/newyou/:id">
         </Route>
         <Route path="/newfav/">
-          <Addfav poems={poems}/>
+          <Addfav poems={poems} setToggleFetch={setToggleFetch}/>
         </Route>
         <Route path="/newfav/:id">
         </Route>
         <Route path="/displayall/">
-          <Displayall poems={poems}/>
+          <Displayall poems={poems} setToggleFetch={setToggleFetch}/>
         </Route>
       </div>
     );
