@@ -7,6 +7,7 @@ import Addfav from "./components/Addfav"
 import Card from './components/Cards';
 import Displayall from './components/Displayall'
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import { baseURL, config } from './services';
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -32,6 +33,7 @@ function App() {
     return (
       <div className="App">
         <Navbar />
+        <ScrollToTop />
         <Route exact path="/">
         <Home poems={poems} setToggleFetch={setToggleFetch}/>
         <div className="welcome">
