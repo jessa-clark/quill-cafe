@@ -89,7 +89,7 @@ label {
   margin-bottom:1em;
   height: 20em;
   text-overflow: inherit;
-  word-wrap: break-word;
+  word-wrap:normal;
   word-break: break-all;
   background: white;
   border: 2px solid black;
@@ -178,4 +178,82 @@ label {
     height:120px;
   }
 } 
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+  .container {
+    width: 320px;
+  }
+
+  .greeting {
+    font-size: 3em;
+  }
+
+  .form-description {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .addyou {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+  }
+
+  .form {
+    display:flex;
+    flex-direction: column;
+    font-family: 'Benne', serif;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #title {
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 70vw;
+    text-align: center;
+  }
+
+  #poem {
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 70vw;
+    text-align: center;
+  }
+
+  #author {
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 70vw;
+    text-align: center;
+  }
+
+  #location {
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 70vw;
+    text-align: center;
+  }
+
+  .dropdown {
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 70vw;
+    text-align: center;
+  }
+
+  #share {
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 70vw;
+    text-align: center;
+  }
+
+}
 

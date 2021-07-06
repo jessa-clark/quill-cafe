@@ -76,3 +76,22 @@ border-top: 2px groove black;
     font-size: 57px;
   }
 }
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+.card {
+  margin-left: 15vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.card-text{
+  font-size: 25px;
+  padding: 0.4rem;
+  font-family: 'Benne', serif;
+  color: black;
+}
+
+.card-title {
+  font-size: 45px;
+}
+}

@@ -177,3 +177,51 @@ label {
   }
 } 
 
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+  .container {
+    width: 320px;
+  }
+
+  .addyou {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+  }
+
+  #title {
+    font-size: 15px;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #poem {
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #author {
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #location {
+    font-size: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  .dropdown {
+    font-size: 20px;
+    margin-left: 7.3em;
+    margin-right: 7em;
+  }
+
+  #share {
+    margin-left: 5.5em;
+    width: 20vw;
+    height:120px;
+  }
+
+}

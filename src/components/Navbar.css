@@ -76,3 +76,15 @@ a:active {
   margin-top: 0;
   }
 }
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+  #quote {
+    margin: 0;
+  }
+
+  #name {
+    margin-top: .5em;
+    padding: 0;
+    line-height: .8em;
+  }
+}

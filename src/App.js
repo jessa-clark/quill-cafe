@@ -6,6 +6,7 @@ import Addyou from "./components/Addyou";
 import Addfav from "./components/Addfav"
 import Card from './components/Cards';
 import Displayall from './components/Displayall'
+import Footer from "./components/Footer";
 import { baseURL, config } from './services';
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -57,6 +58,7 @@ function App() {
         <Route path="/displayall/">
           <Displayall poems={poems} setToggleFetch={setToggleFetch}/>
         </Route>
+        <Footer />
       </div>
     );
   }
