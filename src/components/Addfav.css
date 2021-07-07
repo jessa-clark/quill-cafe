@@ -44,6 +44,7 @@ label {
 }
 
 #title{
+  text-align: center;
   font-family: 'Bentham', serif;
   font-size: 30px;
   height: 2.2em;
@@ -82,15 +83,14 @@ label {
 }
 
 #poem {
+  display: inline-block;
   font-family: 'Bentham', serif;
   font-size: 30px;
   margin-left: 8em;
   margin-right: 8em;
   margin-bottom:1em;
   height: 20em;
-  text-overflow: inherit;
-  word-wrap:normal;
-  word-break: break-all;
+  word-break: break-word;
   background: white;
   border: 2px solid black;
   color: black;
