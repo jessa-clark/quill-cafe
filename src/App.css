@@ -4,6 +4,19 @@ body {
   background-color: #DEC385;
 }
 
+.browseall {
+  text-align: center;
+  font-family: 'Benne', Serif;
+  font-size: 5em;
+}
+
+.sip {
+  text-align: center;
+  font-family: 'Benne', Serif;
+  font-size: 1.6em;
+}
+
+
 .footer {
   margin-top: 5vh;
   text-align: center;
