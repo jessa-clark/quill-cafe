@@ -1,7 +1,7 @@
 <!-- CODENAME: BANANA -->
 
 # Project Overview
-
+```"https://quill-cafe.netlify.app/"```
 ## Quill Café
 
 Grab a beverage and connect through poetry <3
@@ -83,13 +83,13 @@ EXAMPLE RESPONSE
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 25| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|June 29| Project Approval/Core Application Structure/Airtable Setup | Incomplete
-|June 30| Psudocode / actual Code / Components / Get, Set, Put Data | Incomplete
-|July 01| June 30 cont'd / CSS Components| Incomplete
-|July 02| CSS Component cont'd / MVP  | Incomplete
-|July 02| MVP | Incomplete
-|July 06| Advanced CSS / final touches | Incomplete
-|July 07| Presentations | Incomplete
+|June 29| Project Approval/Core Application Structure/Airtable Setup | Complete
+|June 30| Psudocode / actual Code / Components / Get, Set, Put Data | Complete
+|July 01| June 30 cont'd / CSS Components| Complete
+|July 02| CSS Component cont'd / MVP  | Complete
+|July 02| MVP | Complete
+|July 06| Advanced CSS / final touches | Complete
+|July 07| Presentations | Complete
 
 ## Timeframes
 
@@ -97,32 +97,32 @@ EXAMPLE RESPONSE
 | --- | :---: |  :---: | :---: | :---: |
 | Proposal | H | 2hrs| 2hrs | 2hrs |
 | Airtable setup | H | 2hrs| 2hrs | 2hrs |
-| Clickable icons | H | 2hrs| hrs | hrs |
+| Clickable icons | H | 2hrs| 2hrs | 2hrs |
 | Navbar | H | 1hrs| 1hrs | 1hrs |
-| Data population pg1 | H | 2hrs| hrs | hrs |
-| Data population pg2 | H | 2hrs| hrs | hrs |
-| Data population pg3 | H | 2hrs| hrs | hrs |
-| Data population pg4 | H | 2hrs| hrs | hrs |
-| Data population pg5 | H | 2hrs| hrs | hrs |
-| Data population pg6 | H | 2hrs| hrs | hrs |
-| Data population pg7 | H | 2hrs| hrs | hrs |
-| Data population pg8 | H | 2hrs| hrs | hrs |
-| Data population pg9| H | 2hrs| hrs | hrs |
-| Form creation pg1 | H | 2hrs| hrs | hrs |
-| Form creation pg2 | H | 2hrs| hrs | hrs |
-| Component CSS pg1 | H | 2hrs| hrs | hrs |
-| Component CSS pg2 | H | 2hrs| hrs | hrs |
-| Component CSS pg3 | H | 2hrs| hrs | hrs |
-| Component CSS pg4 | H | 2hrs| hrs | hrs |
-| Component CSS pg5 | H | 2hrs| hrs | hrs |
-| Component CSS pg6 | H | 2hrs| hrs | hrs |
-| Component CSS pg7 | H | 2hrs| hrs | hrs |
-| Component CSS pg8 | H | 2hrs| hrs | hrs |
-| Component CSS pg9 | H | 2hrs| hrs | hrs |
-| Responsive CSS  | H | 3hrs| hrs | hrs |
-| Advanced CSS | H | 2hrs| hrs | hrs |
-| Final Touches / Deploy | H | 2hrs| hrs | hrs |
-| Total | H | 54hrs| hrs | hrs |
+| Data population pg1 | H | 2hrs| 2hrs | 2hrs |
+| Data population pg2 | H | 2hrs| 2hrs | 2hrs |
+| Data population pg3 | H | 2hrs| 2hrs | 2hrs |
+| Data population pg4 | H | 2hrs| 2hrs | 2hrs |
+| Data population pg5 | H | 2hrs| 2hrs | 2hrs |
+| Data population pg6 | H | 2hrs| 2hrs | 2hrs |
+| Data population pg7 | H | 2hrs| 2hrs | 2hrs |
+| Data population pg8 | H | 2hrs| 2hrs | 2hrs |
+| Data population pg9| H | 2hrs| 2hrs | 2hrs |
+| Form creation pg1 | H | 2hrs| 2hrs | 2hrs |
+| Form creation pg2 | H | 2hrs| 2hrs | 2hrs |
+| Component CSS pg1 | H | 2hrs| 2hrs | 2hrs |
+| Component CSS pg2 | H | 2hrs| 2hrs | 2hrs |
+| Component CSS pg3 | H | 2hrs| 2hrs | 2hrs |
+| Component CSS pg4 | H | 2hrs| 2hrs | 2hrs |
+| Component CSS pg5 | H | 2hrs| 2hrs | 2hrs |
+| Component CSS pg6 | H | 2hrs| 2hrs | 2hrs |
+| Component CSS pg7 | H | 2hrs| 2hrs | 2hrs |
+| Component CSS pg8 | H | 2hrs| 2hrs | 2hrs |
+| Component CSS pg9 | H | 2hrs| 2hrs | 2hrs |
+| Responsive CSS  | H | 3hrs| 3hrs | 3hrs |
+| Advanced CSS | H | 2hrs| 2hrs | 2hrs |
+| Final Touches / Deploy | H | 2hrs| 2hrs | 2hrs |
+| Total | H | 54hrs| 54hrs | 54hrs |
 
 ## SWOT Analysis
 
