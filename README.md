@@ -1,7 +1,7 @@
 <!-- CODENAME: BANANA -->
 
 # Project Overview
-```"https://quill-cafe.netlify.app/"```
+https://quill-cafe.netlify.app/
 ## Quill Café
 
 Grab a beverage and connect through poetry <3
